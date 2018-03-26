@@ -1,0 +1,48 @@
+
+.ngx-ellipsis-inner{
+    height: 2em;
+}
+.desc{
+    margin-top: 0;
+}
+
+.container .addBtn{
+    width: 100%;
+}
+.addBtn{
+    background-color: #6379f6;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .modal-body > * {
+    width: 100%;
+  }
+  .desc{
+    margin-top: 0% !important;
+}
+  .select select{
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+    border-color: #c6c6c6;
+    margin-bottom: 10px;
+  }
+  .closeBtn{
+      background-color:#fff;
+      color:#222;
+  }
+
+  .btnContainer{
+    width: 100%;
+    margin: 25px auto;
+  }
+  .btnrow{
+      margin: 20px;
+  }
+  .modal-content{
+    background-color: #f8f8fa;
+  }

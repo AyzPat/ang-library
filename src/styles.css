@@ -1,0 +1,27 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+body{
+  background-color: #f8f8fa;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.btn.focus, .btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.modal.show .modal-dialog {
+  margin-top: 7%;
+}
+.modal-header{
+  border-bottom: none;
+}
+
+.modal-title {
+  margin-bottom: 0;
+  line-height: 1.5;
+  margin-top: 5%;
+  font-size: 1.2em;
+  font-weight: 400;
+}

@@ -1,0 +1,33 @@
+nav{
+    height: 70px;
+    background-color: #fff !important;
+    padding: 0px 35px;
+}
+
+.navbar-brand {
+    background-image: url(../assets/library_logo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 150px;
+    height: 30px;
+}
+.app-container{
+    width: 100%;
+    padding: 0 42px;
+    position: relative;
+}
+.nav-link{
+    position: relative;
+}
+.nav-link.active, .nav-link[routerLink='active'] {
+    color: #6379f6 !important;
+}
+.nav-link.active::after{
+    content: '_';
+    bottom: -15%;
+    position: absolute;
+    left: calc(50% - 3px);
+    color: #6379f6;
+}
+

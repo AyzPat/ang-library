@@ -1,0 +1,43 @@
+
+  <div *ngIf="book$ | async as book">
+    
+    <div>
+      
+    <div>
+     
+    </div>
+    <p>
+      
+    </p>
+  </div>
+
+  <div class="row">
+      <div class="col-sm-8">
+              <div *ngIf="book$ | async as book" class="mycard row">
+                  <div class="col-sm-2 img" >
+                  </div>
+                  <div class="col-sm-10">
+                      <div class="heading row">
+                          <div class="col-sm-7">{{book.heading}}</div>
+                          <div class="col-sm-5 right" >{{book.isbn}}</div>
+                      </div>
+                      <div class="author">by
+                          <span>{{book.author}}</span>
+                      </div>
+                      <div class="desc">{{book.desc}}</div>
+                  </div>
+              </div>
+      </div>
+  
+      <div class="col-sm-4" *ngIf="book$ | async as book">
+    <div class="row">
+        <button class="col-sm-6 btn arrow-btn"  (click)="prev(book.id - 1)"> < </button>
+        <button class="col-sm-6 btn arrow-btn" (click)="next(book.id + 1)"> > </button>
+    </div>  
+    <div class="desc-btn">
+        Navigate to Previous / Next Book
+    </div>  
+  
+  
+      </div>
+  </div>

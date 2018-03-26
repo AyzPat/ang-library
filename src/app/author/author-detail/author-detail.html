@@ -1,0 +1,57 @@
+<div *ngIf="author$ | async as author">
+
+    <div>
+
+        <div>
+
+        </div>
+        <p>
+
+        </p>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-8">
+            <div *ngIf="author$ | async as author" class="mycard row">
+                <div class="col-sm-2 img">
+                </div>
+                <div class="col-sm-10">
+                    <div class="heading">
+                        <div class="row">
+                            <div class="col-sm-8">{{author.author}}</div>
+                            <div class="col-sm-4 right" style="text-align:right">Born In {{author.bornIn}}</div>
+                        </div>
+                    </div>
+                    <div class="author">
+                        Age {{author.age}} / {{author.gender}}
+                    </div>
+                    <div style="color: #9395a0">About author text will come here…</div>
+                    <div style="color: #9395a0;margin-top:5%;font-size:.8em">BOOKS WRITTEN <span style="margin-left:20px">{{booksLength}}</span> </div>
+                    <div class="desc row" *ngFor="let books of author.books">
+                        <div class="col-sm-2 img-book">
+                        </div>
+                        <div class="col-sm-10">
+                            <div class="heading row">
+                                <div class="col-sm-7">{{books.name}}</div>
+                                <div class="col-sm-5 right" >{{books.isbn}}</div>
+                            </div>
+                            <div class="desc-book" ellipsis="  ... More" (ellipsis-click-more)="click()">{{books.desc}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-4" *ngIf="author$ | async as author">
+            <div class="row">
+                <button class="col-sm-6 btn arrow-btn" (click)="prev(author.id - 1)">
+                    < </button>
+                        <button class="col-sm-6 btn arrow-btn" (click)="next(author.id + 1)"> > </button>
+            </div>
+            <div class="desc desc-btn">
+                Navigate to Previous / Next Author
+            </div>
+
+
+        </div>
+    </div>

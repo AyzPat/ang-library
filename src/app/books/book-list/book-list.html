@@ -1,0 +1,86 @@
+<!-- <h2>Books</h2>
+    <ul class="items">
+      <li *ngFor="let book of books$ | async"
+        [class.selected]="book.id === selectedId">
+        <a [routerLink]="['/book',book.id]">
+          <span class="badge">{{ book.id }}</span>{{ book.name }}
+        </a>
+      </li>
+    </ul> -->
+
+<div class="row">
+  <div class="col-sm-8">
+    <div class="length">{{booksLength}} Books</div>
+    <div *ngFor="let book of books$ | async" class="mycard row" [routerLink]="['/book',book.id]">
+      <div class="col-sm-2 img">
+      </div>
+      <div class="col-sm-10">
+        <div class="heading row">
+          <div class="col-sm-7">{{book.heading}}</div>
+          <div class="col-sm-5 right">{{book.isbn}}</div>
+        </div>
+        <div class="author">by
+          <span>{{book.author}}</span>
+        </div>
+        <div class="desc" ellipsis="  ... More" (ellipsis-click-more)="moreClicked(book.id)">{{book.desc}}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4">
+    <div class="container">
+      <!-- Button to Open the Modal -->
+      <button type="button" class="btn btn-primary addBtn" data-toggle="modal" data-target="#myModal">
+        Add Book
+      </button>
+
+      <!-- The Modal -->
+      <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-md">
+          <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">ADD BOOK</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              <mat-form-field>
+                <input matInput placeholder="Book Name">
+              </mat-form-field>
+              <div class="select">
+                <select>
+                  <option value="" disabled>Select Author</option>
+                  <option value="option">Author One</option>
+                </select>
+              </div>
+
+              <mat-form-field style="width:60%">
+                <input matInput placeholder="ISBN Number">
+              </mat-form-field>
+              <mat-form-field hintLabel="Max 300 characters">
+                <textarea matInput placeholder="Description of Content"></textarea>
+              </mat-form-field>
+            </div>
+            <div class="row btnrow">
+              <div class="col-sm-6">
+                <div class="btnContainer">
+                  <button type="button" class="btn btn-secondary closeBtn" data-dismiss="modal" style="width: 100%;">Cancel</button>
+                </div>
+
+              </div>
+              <div class="col-sm-6">
+                <div class="btnContainer">
+                  <button type="button" class="btn btn-secondary addBtn" (click)="alert()">Add Book</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

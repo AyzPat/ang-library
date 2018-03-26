@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExample03">
+        <!-- <ul class="navbar-nav mr-auto">
+        </ul> -->
+        <ul class="navbar-nav ml-auto">
+               
+            <li class="nav-item" >
+                <a class="nav-link" [routerLink]=" ['./books'] "  routerLinkActive="active" (click)="addActive(false)">Books</a>
+            </li>
+            
+            <li class="nav-item" >
+                    <a class="nav-link" routerlinkactive="active"  (click)="addActive(true)" [ngClass]="status ? 'active' : ''" [routerLink]=" ['./author'] " >Author</a>
+                </li>
+        </ul>
+    </div>
+</nav>
+<!--  -->
+
+<div class="app-container">
+        <router-outlet>
+                <breadcrumb></breadcrumb>
+            </router-outlet>
+</div>

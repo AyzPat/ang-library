@@ -1,0 +1,43 @@
+.mycard{
+    min-height: 100px;
+    background-color: #fff;
+    padding: 10px;
+    margin:0;
+    border: 2px solid #f8f8f8;   
+    cursor: pointer;
+}
+
+.mycard:hover{
+    background-color: #f2fdfb;
+}
+
+.img{
+    background-image: url(../../assets/author_icon.svg);
+    background-position: center 5px;
+    background-size: 35%;
+    background-repeat: no-repeat;
+}
+.desc{
+    margin-top: 5%;
+}
+.heading{
+    font-weight: 500;
+}
+.heading .right{
+    text-align:right;
+    font-size:.8em;
+    color:#9095aa
+}
+.author{
+    font-size: .875em
+}
+.author span{
+    font-weight: 500;
+}
+.length{
+    position: absolute;
+    top: -50px;
+    right: 3.5%;
+    color: #9095aa;
+    font-size: .8em;
+}

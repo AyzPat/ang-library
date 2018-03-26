@@ -1,0 +1,28 @@
+.arrow-btn{
+    background-color: #fff;
+    height: 50px;
+    font-size: 25px;
+    border: 1px solid #f8f8f8;
+    font-weight: 300;
+    color: #b5b7c4;
+}
+
+.desc-btn{
+    text-align: center;
+    color: #b5b7c4;
+    font-size: .8em;
+}
+.img-book{
+    background-image: url(../../../assets/book_icon.svg) !important;
+    background-position: center 5px;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+.desc-book {
+    margin-top: 2%;
+}
+
+.ngx-ellipsis-inner{
+    height: 2em;
+}

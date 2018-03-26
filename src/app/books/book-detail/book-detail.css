@@ -1,0 +1,14 @@
+.arrow-btn{
+    background-color: #fff;
+    height: 50px;
+    font-size: 25px;
+    border: 1px solid #f8f8f8;
+    font-weight: 300;
+    color: #b5b7c4;
+}
+
+.desc-btn{
+    text-align: center;
+    color: #b5b7c4;
+    font-size: .8em;
+}
