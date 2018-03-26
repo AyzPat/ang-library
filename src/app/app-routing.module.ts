@@ -6,7 +6,6 @@ const appRoutes: Routes = [
   { path: '',   redirectTo: '/books', pathMatch: 'full' },
   { path: 'books',   redirectTo: '/books', pathMatch: 'full' },
   { path: 'author',   redirectTo: '/authors', pathMatch: 'full' },
-  // { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({

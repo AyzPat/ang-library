@@ -1,40 +1,46 @@
-.mycard{
+.mycard {
     min-height: 100px;
     background-color: #fff;
     padding: 10px;
-    margin:0;
+    margin: 0;
     border: 2px solid #f8f8f8;
     cursor: pointer;
 }
 
-.mycard:hover{
+.mycard:hover {
     background-color: #f2fdfb;
 }
 
-.img{
+.img {
     background-image: url(../../assets/book_icon.svg);
     background-position: center 5px;
     background-size: 50%;
     background-repeat: no-repeat;
 }
-.desc{
+
+.desc {
     margin-top: 5%;
 }
-.heading{
+
+.heading {
     font-weight: 500;
 }
-.heading .right{
-    text-align:right;
-    font-size:.8em;
-    color:#9095aa
+
+.heading .right {
+    text-align: right;
+    font-size: .8em;
+    color: #9095aa
 }
-.author{
+
+.author {
     font-size: .875em
 }
-.author span{
+
+.author span {
     font-weight: 500;
 }
-.length{
+
+.length {
     position: absolute;
     top: -50px;
     right: 3.5%;

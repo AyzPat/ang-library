@@ -2,9 +2,6 @@ import 'rxjs/add/operator/switchMap';
 import { Component, OnInit, HostBinding } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
-
-// import { slideInDownAnimation } from '../animations';
-
 import { Author, AuthorService }  from '../author.service';
 import { AppService } from '../../app.service';
 
@@ -34,9 +31,6 @@ export class AuthorDetailComponent implements OnInit {
 
   gotoAuthors(author: Author) {
     let authorId = author ? author.id : null;
-    // Pass along the author id if available
-    // so that the HeroList component can select that author.
-    // Include a junk 'foo' property for fun.
     this.router.navigate(['/authors', { id: authorId, foo: 'foo' }]);
   }
   next(id){

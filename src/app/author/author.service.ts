@@ -149,7 +149,6 @@ export class AuthorService {
 
   getAuthor(id: number | string) {
     return this.getAuthors()
-      // (+) before `id` turns the string into a number
       .map(authors => authors.find(author => author.id === +id));
   }
 }

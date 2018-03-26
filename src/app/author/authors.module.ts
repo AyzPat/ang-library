@@ -1,7 +1,6 @@
 import { NgModule }       from '@angular/core';
 import { CommonModule }   from '@angular/common';
 import { FormsModule }    from '@angular/forms';
-// import { BreadcrumbComponent } from './breadcrum/breadcrum';
 import { AuthorListComponent }    from './author-list/author-list.component';
 import { AuthorDetailComponent }  from './author-detail/author-detail.component';
 import { AuthorService } from './author.service';

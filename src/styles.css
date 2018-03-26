@@ -1,6 +1,5 @@
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
-
-body{
+body {
   background-color: #f8f8fa;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -14,7 +13,8 @@ body{
 .modal.show .modal-dialog {
   margin-top: 7%;
 }
-.modal-header{
+
+.modal-header {
   border-bottom: none;
 }
 
